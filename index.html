@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hellooooo Docker</title>
+  <style>
+    .container {
+      margin: auto;
+      width: 50vw;
+      height: 100vh;
+    }
+    .content {
+      font-size: 5em;
+      text-align: center;
+      background-color: red;
+      color: white;
+      position: relative;
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: move;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes move {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes move {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      Hello you great, big, beautiful world you!
+    </div>
+  </div>
+</body>
+</html>
